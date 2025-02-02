@@ -6,8 +6,8 @@ const Hero = () => {
     <main className='bgImage'>
         <section>
             <div>
-                {/* navbar section */}
-                {/* hero section */}
+                {/* Navbar section */}
+                {/* Hero  section */}
                 <div className='grid grid-cols-1 md:grid-cols-2 '></div>
             </div>
         </section>

@@ -60,9 +60,9 @@ const Hero = () => {
             </div>
             {/* sidebar Menu section */}
             {sideBar && (
-            <div
+            <motion.div  initial={{opacity:1 ,x:-80}} animate={{opacity:1, x:0}} 
              className="absolute top-0 right-0 w-[180px] h-full bg-gradient-to-b from-primary/100 to-primaryDark 100 backdrop-blur-sm z-[10]" onClick={() => setSideBar(false)} >
-           <div className="w-full h-full flex justify-center items-center">
+           <div  className="w-full h-full flex justify-center items-center">
               <div className="flex flex-col justify-center items-center gap-6 text-white">
                  <div className="w-[1px] h-[70px] bg-white"></div>
                    <div className="inline-block p-2 cursor-pointer rounded-full border border-white">
@@ -77,7 +77,7 @@ const Hero = () => {
                    <div className="w-[1px] h-[70px] bg-white"></div>
                 </div>
               </div>
-            </div>
+            </motion.div>
            )}
           </div>
         </div>
